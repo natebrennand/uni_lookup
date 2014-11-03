@@ -5,7 +5,7 @@ import lookup
 
 class TestLookup(unittest.TestCase):
     def _load_data(self, name):
-        with open ('test_outputs/{}'.format(name)) as f:
+        with open('test_outputs/{}'.format(name)) as f:
             return f.read()
 
     def _load_all_data(self):
@@ -21,21 +21,22 @@ if __name__ == '__main__':
     unittest.main()
 
 
-
 test_data = [
     {
         "file": "a.txt",
         "searcH_name": "Leandro Ttiz",
         "name": "Leandro A Ttiz",
         "email": "lat2128@columbia.edu",
-        "title": "Student, FU FOUNDATN SCHL OF ENGINEERING & APPLIED SCIENCE:UGRAD",
+        "title":
+            "Student, FU FOUNDATN SCHL OF ENGINEERING & APPLIED SCIENCE:UGRAD",
     },
     {
         "file": "b.txt",
         "search_name": "Alexa Ding",
         "name": "Alexa Ding",
         "email": "ad9002@columbia.edu",
-        "title": "Student, FU FOUNDATN SCHL OF ENGINEERING & APPLIED SCIENCE:UGRAD",
+        "title":
+            "Student, FU FOUNDATN SCHL OF ENGINEERING & APPLIED SCIENCE:UGRAD",
     },
     {
         "file": "c.txt",
@@ -49,6 +50,7 @@ test_data = [
         "search_name": "Nate Brennand",
         "name": "Frank Johnson Smith",
         "email": "nsb2142@columbia.edu",
-        "title": "Student, FU FOUNDATN SCHL OF ENGINEERING & APPLIED SCIENCE:UGRAD",
+        "title":
+            "Student, FU FOUNDATN SCHL OF ENGINEERING & APPLIED SCIENCE:UGRAD",
     },
 ]

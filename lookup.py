@@ -1,10 +1,11 @@
 
 import re
 from sys import stdin
-from subprocess import check_output, STDOUT
+from subprocess import check_output
+
 
 match = (
-    '-{52}\n' # header
+    '-{52}\n'  # header
     'Name: *(?P<full_name>(\w+? )+\w+)\n'
     'UNI: *(?P<uni>[a-zA-z]{2,3}\d{4})\n'
     'EMail: *(?P<email>[a-zA-z]{2,3}\d{4}@(columbia|barnard)\.edu)\n'
@@ -27,7 +28,3 @@ def lookup(name):
 if __name__ == '__main__':
     for name in stdin.readline().strip():
         print parse(lookup(name))
-
-
-
-

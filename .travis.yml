@@ -8,5 +8,5 @@ install:
 
 
 script:
-    - flake8 **/*.py
+    - flake8 *.py
     - nosetests -sv tests/
