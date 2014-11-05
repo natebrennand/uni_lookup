@@ -11,7 +11,7 @@ match = (
     'UNI: *(?P<uni>[a-zA-z]{2,3}\d{4})\n'
     'EMail: *(?P<email>[a-zA-z]{2,3}\d{4}@(columbia|barnard)\.edu)\n'
     '\n'
-    '  Title: *Student, (?P<school>[\w,&: ]+)\n'
+    '  Title: *Student(?P<school>.*)\n'
 )
 
 
